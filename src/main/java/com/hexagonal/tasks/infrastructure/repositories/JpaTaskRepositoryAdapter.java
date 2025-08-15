@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Repository
 public class JpaTaskRepositoryAdapter implements TaskRepositoryPort {
@@ -32,7 +31,7 @@ public class JpaTaskRepositoryAdapter implements TaskRepositoryPort {
 
     @Override
     public List<Task> findAll() {
-        return jpaTaskRepository.findAll().stream().map(TaskEntity::toDomainModel).collect(Collectors.toList());
+        return jpaTaskRepository.findAll().stream().map(TaskEntity::toDomainModel).toList();
     }
 
     @Override

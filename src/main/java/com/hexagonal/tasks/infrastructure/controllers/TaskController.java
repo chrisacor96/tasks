@@ -3,7 +3,6 @@ package com.hexagonal.tasks.infrastructure.controllers;
 import com.hexagonal.tasks.application.services.TaskService;
 import com.hexagonal.tasks.domain.models.AdditionalTaskInfo;
 import com.hexagonal.tasks.domain.models.Task;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,6 @@
 package com.hexagonal.tasks.application.services;
 
 import com.hexagonal.tasks.application.usecases.DeleteTaskUseCaseImpl;
-import com.hexagonal.tasks.application.usecases.RetrieveTaskUseCaseImpl;
 import com.hexagonal.tasks.domain.models.AdditionalTaskInfo;
 import com.hexagonal.tasks.domain.models.Task;
 import com.hexagonal.tasks.domain.ports.in.*;
